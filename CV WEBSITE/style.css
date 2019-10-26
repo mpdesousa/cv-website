@@ -1,0 +1,294 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgba(242, 242, 242, .6); /*Defines the intensity between 0 and 255, or percentag value between 0% and 100%*/
+  margin: 0;
+  padding: 0;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color:  #ff9904;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  font-weight: 700;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.navbar a:hover {
+  color: #3498db;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.clancy {
+  height: 100vh; /*height to 100% of view height*/
+  /*background: #31b0d5; background color to blue*/
+  background: url('dublin-skyline.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.clancy-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 320px;
+}
+
+
+.clancy-text h1 {
+  /*YOUR NAME*/
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.clancy-text p {
+  margin: 0;
+}
+
+/*SOCIAL LINKS*/
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+}
+
+.social {
+  font-size: 2em;
+  color: white;
+  padding: 20px;
+}
+
+/*ARROW LINK*/
+#down-arrow {
+  /*position: absolute;
+  width: 100%;*/
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#down-arrow a {
+  color: white;
+}
+
+/*CONTENT*/
+.container {
+  /*sets up flexbox*/
+  display: flex;
+  flex-direction: column;
+}
+.content-image {
+  align-items: center;
+  padding-top: 0px;
+  margin:auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  transition: all .5s;}
+
+.row {
+  display: flex;
+}
+
+.white {
+  background: white;
+}
+
+.side-content {
+  flex: 0 0 16.6%;
+}
+
+.main-content {
+  flex: 0 0 66.6%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.side-content-sm {
+  flex: 0 0 10%;
+}
+
+.main-content-lg {
+  flex: 0 0 80%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: #31b0d5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-body {
+  line-height: 2;
+  color: rgba(0,0,0,.75);
+}
+.header-body {
+  line-height: ;
+  color: rgba(0,0,0,.75);
+}
+
+/*EDUCATION*/
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  background-color: white;
+  border-bottom: 1px solid rgba(0,0,0,.075);
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card-content {
+  padding: .25rem 1.25rem;
+  flex: 1 1 auto;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 400;
+  color: black;
+}
+
+.job-title {
+  float: right;
+}
+
+/*SKILLS*/
+.table,th,td {
+  border: 1px solid black;id black;
+  border-
+  width: 50%;
+
+}
+
+/*INTERESTS*/
+.ul-interests {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-interests {
+  display: inline-block;
+  margin: 7px;
+  padding: 5px 10px;
+  color: white;
+  background: #ff9904;
+  list-style: none;
+  cursor: default;
+  font-size: 1.2em;
+}
+.li-interests:nth-child(odd) {
+  background: #0399ff;
+}
+
+
+/*CONTACT*/
+.clancy-contact {
+  height: 70vh; /*height to 100% of view height*/
+  /*background: #31b0d5; background color to blue*/
+  background: url('capetown.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 0; /*no bottom margin*/
+
+  display: flex;
+  flex-direction: column;
+}
+
+.blue {
+  background: #3498db;
+  text-align: center;
+}
+
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid;
+  margin-bottom: 10px;
+  background: #ff9904;
+  color: black;
+  font-weight: 400;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.contact textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact button {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: 1px solid;
+  color: black;
+  font-weight: 800;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.white-text {
+  color: white;
+}
